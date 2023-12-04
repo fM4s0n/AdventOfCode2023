@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             BtnDay1 = new Button();
-            LblDay1 = new Label();
+            LblDay1Pt1 = new Label();
+            LblDay1Pt2 = new Label();
             SuspendLayout();
             // 
             // BtnDay1
@@ -44,19 +45,29 @@
             // 
             // LblDay1
             // 
-            LblDay1.AutoSize = true;
-            LblDay1.Location = new Point(110, 27);
-            LblDay1.Name = "LblDay1";
-            LblDay1.Size = new Size(68, 15);
-            LblDay1.TabIndex = 1;
-            LblDay1.Text = "Day 1 result";
+            LblDay1Pt1.AutoSize = true;
+            LblDay1Pt1.Location = new Point(110, 27);
+            LblDay1Pt1.Name = "LblDay1";
+            LblDay1Pt1.Size = new Size(88, 15);
+            LblDay1Pt1.TabIndex = 1;
+            LblDay1Pt1.Text = "Day 1 pt1 result";
+            // 
+            // LblDay1Pt2
+            // 
+            LblDay1Pt2.AutoSize = true;
+            LblDay1Pt2.Location = new Point(204, 27);
+            LblDay1Pt2.Name = "LblDay1Pt2";
+            LblDay1Pt2.Size = new Size(88, 15);
+            LblDay1Pt2.TabIndex = 2;
+            LblDay1Pt2.Text = "Day 1 pt2 result";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(LblDay1);
+            Controls.Add(LblDay1Pt2);
+            Controls.Add(LblDay1Pt1);
             Controls.Add(BtnDay1);
             Name = "Form1";
             Text = "Form1";
@@ -67,6 +78,7 @@
         #endregion
 
         private Button BtnDay1;
-        private Label LblDay1;
+        private Label LblDay1Pt1;
+        private Label LblDay1Pt2;
     }
 }
