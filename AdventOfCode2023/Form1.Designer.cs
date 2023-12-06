@@ -43,11 +43,11 @@
             BtnDay1.UseVisualStyleBackColor = true;
             BtnDay1.Click += BtnDay1_Click;
             // 
-            // LblDay1
+            // LblDay1Pt1
             // 
             LblDay1Pt1.AutoSize = true;
-            LblDay1Pt1.Location = new Point(110, 27);
-            LblDay1Pt1.Name = "LblDay1";
+            LblDay1Pt1.Location = new Point(123, 27);
+            LblDay1Pt1.Name = "LblDay1Pt1";
             LblDay1Pt1.Size = new Size(88, 15);
             LblDay1Pt1.TabIndex = 1;
             LblDay1Pt1.Text = "Day 1 pt1 result";
@@ -55,7 +55,7 @@
             // LblDay1Pt2
             // 
             LblDay1Pt2.AutoSize = true;
-            LblDay1Pt2.Location = new Point(204, 27);
+            LblDay1Pt2.Location = new Point(271, 27);
             LblDay1Pt2.Name = "LblDay1Pt2";
             LblDay1Pt2.Size = new Size(88, 15);
             LblDay1Pt2.TabIndex = 2;
