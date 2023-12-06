@@ -31,6 +31,9 @@
             BtnDay1 = new Button();
             LblDay1Pt1 = new Label();
             LblDay1Pt2 = new Label();
+            LblDay2Pt2 = new Label();
+            LblDay2Pt1 = new Label();
+            btnDay2 = new Button();
             SuspendLayout();
             // 
             // BtnDay1
@@ -61,11 +64,42 @@
             LblDay1Pt2.TabIndex = 2;
             LblDay1Pt2.Text = "Day 1 pt2 result";
             // 
+            // LblDay2Pt2
+            // 
+            LblDay2Pt2.AutoSize = true;
+            LblDay2Pt2.Location = new Point(271, 63);
+            LblDay2Pt2.Name = "LblDay2Pt2";
+            LblDay2Pt2.Size = new Size(88, 15);
+            LblDay2Pt2.TabIndex = 5;
+            LblDay2Pt2.Text = "Day 2 pt2 result";
+            // 
+            // LblDay2Pt1
+            // 
+            LblDay2Pt1.AutoSize = true;
+            LblDay2Pt1.Location = new Point(123, 63);
+            LblDay2Pt1.Name = "LblDay2Pt1";
+            LblDay2Pt1.Size = new Size(88, 15);
+            LblDay2Pt1.TabIndex = 4;
+            LblDay2Pt1.Text = "Day 2 pt1 result";
+            // 
+            // btnDay2
+            // 
+            btnDay2.Location = new Point(29, 59);
+            btnDay2.Name = "btnDay2";
+            btnDay2.Size = new Size(75, 23);
+            btnDay2.TabIndex = 3;
+            btnDay2.Text = "Day2";
+            btnDay2.UseVisualStyleBackColor = true;
+            btnDay2.Click += btnDay2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(LblDay2Pt2);
+            Controls.Add(LblDay2Pt1);
+            Controls.Add(btnDay2);
             Controls.Add(LblDay1Pt2);
             Controls.Add(LblDay1Pt1);
             Controls.Add(BtnDay1);
@@ -80,5 +114,8 @@
         private Button BtnDay1;
         private Label LblDay1Pt1;
         private Label LblDay1Pt2;
+        private Label LblDay2Pt2;
+        private Label LblDay2Pt1;
+        private Button btnDay2;
     }
 }
