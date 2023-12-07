@@ -18,7 +18,7 @@ namespace AdventOfCode2023
         private void btnDay2_Click(object sender, EventArgs e)
         {
             LblDay2Pt1.Text = Day2.RunDay2Pt1().ToString();
-            //LblDay2Pt2.Text = Day2.RunDay2Pt2().ToString();
+            LblDay2Pt2.Text = Day2.RunDay2Pt2().ToString();
         }
     }
 }

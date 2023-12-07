@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode2023.DaySolutions;
+﻿using System.Data.SqlTypes;
+
+namespace AdventOfCode2023.DaySolutions;
 
 internal static class Day2
 {
@@ -66,14 +68,54 @@ internal static class Day2
                 total += gameId;
                 gamesPassed.Add(gameId);
             }
-
         }
 
         return total;
     }
 
-    internal static string RunDay2Pt2()
+    internal static int RunDay2Pt2()
     {
-        throw new NotImplementedException();
+        int total = 0;
+
+        List<string> games = [..puzzleInput.Split("\r\n")];
+
+        foreach (string game in games)
+        {
+            int minRed = 0;
+            int minGreen = 0;
+            int minBlue = 0;
+
+            string gameString = game.Split(": ")[1];
+            List<string> sets = [.. gameString.Split("; ")];
+
+            foreach (string set in sets)
+            {
+                List<string> cubeNums = [..set.Split(", ")];
+                foreach (string cubeNum in cubeNums)
+                {
+                    int num = Convert.ToInt32(cubeNum.Split(" ")[0]);
+                    string colour = cubeNum.Split(" ")[1];
+
+                    switch (colour)
+                    {
+                        case "red":
+                            if (num > minRed)
+                                minRed = num;
+                            break;
+                        case "green":
+                            if (num > minGreen)
+                                minGreen = num;
+                            break;
+                        case "blue":
+                            if (num > minBlue)
+                                minBlue = num;
+                            break;
+                    }
+                }
+            }
+
+            total += minRed * minGreen * minBlue;
+        }
+        return total;
     }
 }
