@@ -47,11 +47,10 @@ internal static class Day3
             {
                 if (char.IsDigit(lines[charLoc.Y][charIndex]) == false)
                 {
-                    //we know we have found the start
+                    
+
                 }
-
             }
-
         }
 
 
