@@ -34,6 +34,9 @@
             LblDay2Pt2 = new Label();
             LblDay2Pt1 = new Label();
             btnDay2 = new Button();
+            LblDay3Pt2 = new Label();
+            LblDay3Pt1 = new Label();
+            BtnDay3 = new Button();
             SuspendLayout();
             // 
             // BtnDay1
@@ -92,11 +95,42 @@
             btnDay2.UseVisualStyleBackColor = true;
             btnDay2.Click += btnDay2_Click;
             // 
+            // LblDay3Pt2
+            // 
+            LblDay3Pt2.AutoSize = true;
+            LblDay3Pt2.Location = new Point(271, 92);
+            LblDay3Pt2.Name = "LblDay3Pt2";
+            LblDay3Pt2.Size = new Size(88, 15);
+            LblDay3Pt2.TabIndex = 8;
+            LblDay3Pt2.Text = "Day 3 pt2 result";
+            // 
+            // LblDay3Pt1
+            // 
+            LblDay3Pt1.AutoSize = true;
+            LblDay3Pt1.Location = new Point(123, 92);
+            LblDay3Pt1.Name = "LblDay3Pt1";
+            LblDay3Pt1.Size = new Size(88, 15);
+            LblDay3Pt1.TabIndex = 7;
+            LblDay3Pt1.Text = "Day 3 pt1 result";
+            // 
+            // BtnDay3
+            // 
+            BtnDay3.Location = new Point(29, 88);
+            BtnDay3.Name = "BtnDay3";
+            BtnDay3.Size = new Size(75, 23);
+            BtnDay3.TabIndex = 6;
+            BtnDay3.Text = "Day3";
+            BtnDay3.UseVisualStyleBackColor = true;
+            BtnDay3.Click += BtnDay3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(LblDay3Pt2);
+            Controls.Add(LblDay3Pt1);
+            Controls.Add(BtnDay3);
             Controls.Add(LblDay2Pt2);
             Controls.Add(LblDay2Pt1);
             Controls.Add(btnDay2);
@@ -117,5 +151,8 @@
         private Label LblDay2Pt2;
         private Label LblDay2Pt1;
         private Button btnDay2;
+        private Label LblDay3Pt2;
+        private Label LblDay3Pt1;
+        private Button BtnDay3;
     }
 }
